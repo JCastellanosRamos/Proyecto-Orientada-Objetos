@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="481.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9" fx:controller="prueba.SUCController">
+   <children>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="33.0" prefHeight="36.0" prefWidth="302.0" text="ALMACEN &quot;ATRES&quot;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableID" layoutX="32.0" layoutY="92.0" prefHeight="383.0" prefWidth="417.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="101.0" text="ID" />
+            <TableColumn fx:id="nombre" prefWidth="123.0" text="Sucursal" />
+            <TableColumn fx:id="usuario" prefWidth="192.0" text="Numero de empleados" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn1" layoutX="170.0" layoutY="510.0" mnemonicParsing="false" onAction="#handle" prefHeight="36.0" prefWidth="145.0" text="TODOS" />
+      <Button fx:id="btn3" layoutX="189.0" layoutY="567.0" mnemonicParsing="false" onAction="#handle" prefHeight="36.0" prefWidth="106.0" text="Menu" />
+   </children>
+</AnchorPane>
